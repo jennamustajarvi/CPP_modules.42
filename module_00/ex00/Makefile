@@ -17,14 +17,14 @@ CPP_FLAGS = -Wall -Wextra -Werror -std=c++98
 
 RM = rm -rdf
 
-SRC += megaphone.cpp
+SRC = megaphone.cpp
 
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CPP) $(CPP_FLAGS) $(SRC)
+	$(CPP) $(CPP_FLAGS) $(OBJ) -o $(NAME)
 
 clean:
 	$(RM) $(OBJ)
