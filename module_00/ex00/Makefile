@@ -19,7 +19,7 @@ RM = rm -rdf
 
 SRC = megaphone.cpp
 
-OBJ = $(SRC:.c=.o)
+OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)
 
